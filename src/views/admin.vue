@@ -36,3 +36,29 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+ul{
+  padding: 50px;
+   border: 1px solid black;
+}
+li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ 
+
+}
+li img{
+  width:200px;
+  height:200px;
+}
+li p{
+  font-size: 16px;
+
+}
+li button{
+  width: 100px;
+  height: 30px;
+}
+</style>

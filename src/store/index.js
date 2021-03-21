@@ -18,7 +18,9 @@ export default new Vuex.Store({
   },
   actions: {
     createpost(context, payload){
-      console.log(payload)
+      if (!payload.img ) {
+        payload.img = "https://www.soonnight.com/images/upload/contenu/photos/2016/01/05/zidane_0-8576.jpg"
+      }
       context.commit('createpost', payload)
     }
   },
